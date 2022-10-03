@@ -2,7 +2,7 @@
 
 
 ## Description
-This is a completely random customizable password generator, intended for use in any password protected environment. 
+This is a completely random customizable password generator, intended for use in any password protected environment. Designed originally for classwork, and later used as an actual program to generate passwords for my own personal use.
 
  ## Table of Contents
 -[Installation]
@@ -17,6 +17,7 @@ In order to use this website you will need to type in your browser "StyngerBee.g
 
 After that you can simply hit generate password and follow the commands given to you. Images below;
 
+![Image of main screen](./images/pwgenerator.png)
 
 
 ## License
