@@ -1,24 +1,24 @@
 # Module 3 Challenge
 
 
-Description
+## Description
 This is a completely random customizable password generator, intended for use in any password protected environment. 
 
-Table of Contents
+ ## Table of Contents
 [Installation]
 [Usage]
 [License]
-Installation
+ ## Installation
 In order to use this application, you will only need a basic web browser. Any will work, whether it be Microsoft Edge, Google Chrome, Mozilla Firefox, or even Internet Explorer.
 
-Usage
+## Usage
 In order to use this website you will need to type in your browser "StyngerBee.github.io/curransmodule3passwordgenerator".
 
 After that you can simply hit generate password and follow the commands given to you. Images below;
 
 
 
-License
+## License
 MIT License
 
 Copyright (c) 2022 Curran Duke
