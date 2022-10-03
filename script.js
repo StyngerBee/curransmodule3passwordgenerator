@@ -1,6 +1,4 @@
 // Assignment code here
-
-
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
@@ -13,15 +11,15 @@ function writePassword() {
 
 }
 
-// Add event listener to generate button
+// add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-// New Code Below this line ##############################################################################################
-
+// new Code Below this line 
+// adds generatePassword as a function.
 function generatePassword() {
   alert ('Follow these commands in order to generate your random password.');
 
-  // User input for password length and validation for a number between specified values
+  // input for password length and error for incorrect input
   var inValid = true;
   while (inValid) {
     var passwordLength = Number(prompt('How many characters would you like your password to be?\nMust be more than 8 characters.\nMust be less than 128 characters.'));
@@ -35,7 +33,7 @@ function generatePassword() {
   }
   alert('You chose the length of your password to be:\n' + passwordLength + ' characters.\n\nYou will now choose if your password will contain numbers, special characters, upper case, and lower case characters.\nPlease choose at least 1 option.');
 
-  // User choice of character type and validation that at least one choice is true
+  // options for character types in password, and validation for it.
   while (!inValid) {
     var lowerCase = confirm('Would you like your password to include: \nLower Case letters?');
     var upperCase = confirm('Would you like your password to include: \nUpper Case letters?');
@@ -49,7 +47,7 @@ function generatePassword() {
     }
   }
   
-  // Defines available password characters based on user input
+  // defines available password characters based on user input
   if (lowerCase == true) {
     lowerCase = 'abcdefghijklmnopqrstuvwxyz'
   } else {
@@ -68,10 +66,10 @@ function generatePassword() {
     special = ''
   }
 
-  // Merges strings of all chosen options
+  // merges strings of all chosen options
   var grandString = special.concat(lowerCase, upperCase, numeric);
 
-  // creates final password by randomizing through each item in the string
+  // creates final password
   var randomNumber = '';
   for (var i = 0; i < passwordLength; i++) {
     randomNumber += grandString[Math.floor(Math.random() * grandString.length)];
